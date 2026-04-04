@@ -2,7 +2,21 @@
    ADDITIONAL SECTIONS CSS — appended to style.css
    ============================================================ */
 
-/* ── Environment Section ── */
+/* ── Team Photo ── */
+.team-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  display: block;
+  padding: 12px 8px 0;
+  transition: transform 0.4s ease;
+}
+.team-card:hover .team-photo {
+  transform: scale(1.03);
+}
+
+
 .env-section { background: var(--gray-50); }
 .env-concept-row { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 48px; }
 .env-concept-card {
@@ -161,10 +175,15 @@
 .team-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: var(--green-light); }
 .team-card.featured-team { border: 2px solid var(--green-mid); }
 .team-card-avatar {
-  height: 120px;
+  height: 220px;
   background: linear-gradient(135deg, var(--green-dark), var(--green-mid));
-  display: flex; align-items: center; justify-content: center;
-  font-size: 3rem; color: rgba(255,255,255,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: rgba(255,255,255,.5);
+  overflow: hidden;
+  position: relative;
 }
 .avatar-teal { background: linear-gradient(135deg,#0d9488,#0891b2) !important; }
 .avatar-blue { background: linear-gradient(135deg,var(--blue-dark),var(--blue-mid)) !important; }
