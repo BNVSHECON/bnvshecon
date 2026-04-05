@@ -275,7 +275,7 @@ function initEnquiryForm() {
          Replace YOUR_FORMSPREE_ID below with your actual Formspree form ID.
          Sign up free at https://formspree.io → create a form → copy the ID.
          Example: https://formspree.io/f/xpwzabcd  →  ID = xpwzabcd          */
-      const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORMSPREE_ID';
+      const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xgoppdve';
 
       const res = await fetch(FORMSPREE_ENDPOINT, {
         method:  'POST',
